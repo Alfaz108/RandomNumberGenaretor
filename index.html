@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <section>
+        <div class="count">
+            <h1> Random Number Genaretor</h1>
+            <p id="text">0</p>
+            <button id="sub">Genaretor</button>
+        </div>
+
+    </section>
+
+    <script>
+        var a=document.getElementById("text");
+        var b=document.getElementById("sub");
+        var rand=Math.floor(Math.random()*10)+1;
+        a.innerHTML=rand;
+        b.addEventListener('click', function(){
+            var rand=Math.floor(Math.random()*10)+1;
+            a.innerHTML=rand;
+        })
+    </script>
+
+</body>
+    
